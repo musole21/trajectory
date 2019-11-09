@@ -10,6 +10,8 @@ body {
   font-family: "Open Sans", sans-serif;
   color: white;
   background-color: #181f2a;
+  width: 100%;
+  min-height: 100vh;
 }
 
 h1,
