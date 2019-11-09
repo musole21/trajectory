@@ -1,0 +1,25 @@
+$font-stack: (
+  primary: "Open Sans",
+  secondary: "Raleway"
+);
+
+$primary-colors: (
+  main: hsl(218, 28%, 13%),
+  footer: hsl(216, 53%, 9%),
+  testimonials: hsl(219, 30%, 18%),
+  intro-signup: hsl(217, 28%, 15%)
+);
+$accent-color: hsl(198, 60%, 50%);
+$neutral-color: hsl(0, 0%, 100%);
+
+/* font picker function */
+
+@function font($name) {
+  @return map-get($font-stack, $name);
+}
+
+/* colors picker function */
+
+@function color($color) {
+  @return map-get($primary-colors, $color);
+}

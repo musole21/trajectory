@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: font(primary), sans-serif;
+  color: $neutral-color;
+  background-color: color(main);
+}
+
+h1,
+h2,
+h3,
+.cta,
+.mian-nav {
+  font-family: font(secondary);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.main-header,
+.sign-up {
+  background-color: color(intro-signup);
+}
+
+.testimonials {
+  background-color: color(testimonials);
+}
+
+.main-footer {
+  background-color: color(footer);
+}
