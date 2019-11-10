@@ -1,2 +1,89 @@
 @import "variables";
 @import "general";
+
+// this placeholder class will be used on any flex containers
+@mixin flex {
+  display: flex;
+}
+
+// this placeholder class will be used on any grid containers on the page
+@mixin grid {
+  display: grid;
+}
+
+.main-header {
+  @include grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 5rem;
+  background-image: url("/images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+// styles for the main navbar
+.main-nav {
+  padding-top: 2rem;
+}
+
+.nav-links {
+  @include flex;
+  align-items: center;
+
+  .header-logo {
+    margin-right: auto;
+
+    img {
+      width: 70%;
+    }
+  }
+
+  .link {
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    font-size: 0.85rem;
+  }
+}
+
+// header intro styles
+.header-intro {
+  max-width: 500px;
+  justify-self: center;
+  text-align: center;
+
+  .intro-banner {
+    width: 100%;
+  }
+
+  .intro-heading {
+    line-height: 1.35;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+  }
+
+  .intro-description {
+    font-size: 0.95rem;
+  }
+}
+
+.intro-form {
+  margin-top: 1.85rem;
+  [type="submit"] {
+    display: inline-block;
+    width: 250px;
+    border: none;
+    padding: 12px 0;
+    border-radius: 50px;
+    color: $neutral-color;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}
