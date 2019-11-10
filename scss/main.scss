@@ -118,3 +118,40 @@
     font-size: 0.89rem;
   }
 }
+
+// styles for promo section
+.promo {
+  @include grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  justify-items: center;
+  margin-top: 7rem;
+
+  .promo-image {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  .promo-heading {
+    margin: 1rem 0;
+  }
+
+  .promo-description {
+    max-width: 400px;
+
+    p {
+      font-size: 0.89rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  a.demo {
+    font-size: 0.85rem;
+    color: $accent-color;
+    border-bottom: 2px solid $accent-color;
+    padding: 0 24px 5px 0;
+    background-image: url("/images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}

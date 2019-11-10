@@ -158,4 +158,40 @@ p {
 .product .product-description {
   font-size: 0.89rem;
 }
+
+.promo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  justify-items: center;
+  margin-top: 7rem;
+}
+
+.promo .promo-image {
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+.promo .promo-heading {
+  margin: 1rem 0;
+}
+
+.promo .promo-description {
+  max-width: 400px;
+}
+
+.promo .promo-description p {
+  font-size: 0.89rem;
+  margin-bottom: 1rem;
+}
+
+.promo a.demo {
+  font-size: 0.85rem;
+  color: #339ecc;
+  border-bottom: 2px solid #339ecc;
+  padding: 0 24px 5px 0;
+  background-image: url("/images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
 /*# sourceMappingURL=main.css.map */
