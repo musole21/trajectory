@@ -1,6 +1,8 @@
 /* font picker function */
 /* colors picker function */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -41,7 +43,7 @@ p {
 }
 
 .main-header,
-.sign-up {
+.sign-up-content {
   background-color: #1c2431;
 }
 
@@ -241,5 +243,53 @@ p {
 
 .author .author-title {
   font-size: 0.73rem;
+}
+
+.sign-up {
+  display: grid;
+  grid-template-columns: auto;
+  place-content: center;
+}
+
+.sign-up-content {
+  display: grid;
+  grid-template-columns: minmax(auto, 450px);
+  justify-items: center;
+  top: 135px;
+  text-align: center;
+  padding: 2em 1.3rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(24, 31, 42, 0.2);
+}
+
+.sign-up-content .sign-up-heading {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.sign-up-content .sign-up-description {
+  font-size: 0.85rem;
+}
+
+.sign-up-content .sign-up-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sign-up-content .sign-up-form input {
+  flex: 1 1 100%;
+  padding: 15px 5%;
+  border: none;
+  border-radius: 50px;
+}
+
+.sign-up-content .sign-up-form [type="email"] {
+  margin: 1.65rem 0;
+}
+
+.sign-up-content .sign-up-form [type="submit"] {
+  color: white;
+  font-weight: 700;
+  font-size: 1.015rem;
 }
 /*# sourceMappingURL=main.css.map */
