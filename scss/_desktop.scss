@@ -42,18 +42,20 @@
 }
 
 .main-footer {
-  grid-template-columns: repeat(6, 1fr);
-  padding: 15% 5%;
+  @include desktop(768px) {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 15% 5%;
 
-  .footer-logo {
-    grid-column: 1 / -1;
-  }
+    .footer-logo {
+      grid-column: 1 / -1;
+    }
 
-  .location {
-    grid-column: span 2;
-  }
+    .location {
+      grid-column: span 2;
+    }
 
-  .social-media {
-    margin: 0;
+    .social-media {
+      margin: 0;
+    }
   }
 }

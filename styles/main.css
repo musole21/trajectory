@@ -374,20 +374,19 @@ main {
   }
 }
 
-.main-footer {
-  grid-template-columns: repeat(6, 1fr);
-  padding: 15% 5%;
-}
-
-.main-footer .footer-logo {
-  grid-column: 1 / -1;
-}
-
-.main-footer .location {
-  grid-column: span 2;
-}
-
-.main-footer .social-media {
-  margin: 0;
+@media screen and (min-width: 768px) {
+  .main-footer {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 15% 5%;
+  }
+  .main-footer .footer-logo {
+    grid-column: 1 / -1;
+  }
+  .main-footer .location {
+    grid-column: span 2;
+  }
+  .main-footer .social-media {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
