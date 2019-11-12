@@ -1,0 +1,59 @@
+@mixin desktop($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+.products {
+  @include desktop(768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 0;
+  }
+}
+
+.promo {
+  @include desktop(768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-items: stretch;
+
+    .promo-image {
+      margin: 0;
+    }
+
+    & &-heading {
+      max-width: 375px;
+      font-size: 1.9em;
+    }
+
+    & &-description {
+      max-width: 100%;
+    }
+  }
+}
+
+.testimonials {
+  @include desktop(1000px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+  }
+}
+
+.main-footer {
+  grid-template-columns: repeat(6, 1fr);
+  padding: 15% 5%;
+
+  .footer-logo {
+    grid-column: 1 / -1;
+  }
+
+  .location {
+    grid-column: span 2;
+  }
+
+  .social-media {
+    margin: 0;
+  }
+}
