@@ -38,15 +38,38 @@
   @include desktop(1000px) {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
+    background-position: 45px 132px;
+  }
+}
+
+.sign-up-content {
+  @include desktop(768px) {
+    .sign-up-form {
+      flex-wrap: nowrap;
+      align-items: center;
+      margin-top: 1.5rem;
+
+      [type="email"] {
+        flex: 1 1 75%;
+        margin: 0 1.5rem 0 0;
+      }
+
+      [type="submit"] {
+        flex: 1 1 25%;
+      }
+    }
   }
 }
 
 .main-footer {
   @include desktop(768px) {
     grid-template-columns: repeat(6, 1fr);
-    padding: 15% 5%;
+    justify-items: center;
+    gap: 2rem;
+    padding: 15% 5% 5%;
 
     .footer-logo {
+      justify-self: start;
       grid-column: 1 / -1;
     }
 
@@ -56,6 +79,7 @@
 
     .social-media {
       margin: 0;
+      justify-content: start;
     }
   }
 }
